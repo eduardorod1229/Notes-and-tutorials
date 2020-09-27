@@ -8,15 +8,15 @@ To see the full images and dataset see the [html file](https://github.com/eduard
 
 ## Importing libraries using R syntax
 
-* For this to work you need to download and install the `reticulate` library and either [miniconda](https://docs.conda.io/en/latest/miniconda.html) or [anaconda](https://www.anaconda.com) software
-With the following code you can import the python libraries as "R objects" which will appear in the **environment** section of R studio so for an RMarkdow you need to include the `'''{R}` syntax
+* For this to work you need to download and install the `reticulate` library using `install.packages('reticulate')` and either [miniconda](https://docs.conda.io/en/latest/miniconda.html) or [anaconda](https://www.anaconda.com) software
+With the following code you can import the python libraries as "R objects" which will appear in the **environment** section of R studio so for an RMarkdown you need to include the `'''{R}` syntax
 
 ```{r include=TRUE}
 sns<- import('seaborn')
 plt<- import('matplotlib.pyplot')
 pd <- import('pandas')
 ```
-If the libraries are correctly imported then they will shouw up in the *Global environment* pane as "Modules"
+If the libraries are correctly imported then they will shouw up in the *Global environment* pane as *"Modules"*
 
 ## Importing the dataset
 
