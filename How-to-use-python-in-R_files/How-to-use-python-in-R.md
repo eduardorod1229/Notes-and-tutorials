@@ -2,6 +2,20 @@ How to use python in R
 ================
 J. Eduardo Rodriguez Almaraz
 
+- [Importing libraries](#Importing-libraries-using-R-syntax)
+  
+- [Getting the data](#Importing-the-dataset)
+  
+  
+- [Creating the plots](#Creating-the-plots)
+  * [heatmap](#Heatmap)
+  * [Pair Plots](#Pair-plots)
+  
+- [Manipulating Data](#Extra-quick-examples-to-manipulate-Python-\<–\>-R-data)
+  * [Python to R](#Python-to-R)
+  * [R to Python](#R-to-Python)
+
+
 ``` r
 knitr::opts_chunk$set(echo = TRUE)
 library(reticulate)
@@ -112,6 +126,8 @@ import matplotlib.pyplot as plt
 
 Lets build the plot using python syntax
 
+### Heatmap
+
 ``` python
 import seaborn as sns
 sns.heatmap(df1, fmt='g', cmap='viridis')
@@ -122,9 +138,7 @@ plt.show()
 
 **Success\!**
 
-Lets create
-pairplots
-
+### Pair plots
 ``` python
 sns.pairplot(r.iris, hue = 'Species')
 ```
@@ -177,6 +191,8 @@ science](https://towardsdatascience.com/python-seaborn-plots-in-r-using-reticula
 Here I am laying out how we can interact with data generated while using
 python and bringing it back to R.
 
+
+ ### Python to R
 We will create in python:
 
   - Two variables with a single value
@@ -403,6 +419,8 @@ data_frame
     ## 148          6.5         3.0          5.2         2.0  virginica
     ## 149          6.2         3.4          5.4         2.3  virginica
     ## 150          5.9         3.0          5.1         1.8  virginica
+
+### R to Python
 
 Now lets bring it back to Python:
 
