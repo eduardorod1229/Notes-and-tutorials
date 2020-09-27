@@ -77,7 +77,7 @@ That’s it! You have now two options to interact with R and python. I still pre
 
 ### References
 
-1. [Full explanation](https://github.com/eduardorod1229/Notes-and-tutorials/blob/master/How-to-use-python-in-R.md)
+1. [Full explanation](https://github.com/eduardorod1229/Notes-and-tutorials/blob/master/How-to-use-python-in-R_files/How-to-use-python-in-R.md)
 1. [Python Seaborn Plots in R using reticulate](https://towardsdatascience.com/python-seaborn-plots-in-r-using-reticulate-fb59cebf61a7)
 1. [Reticulate documentation](https://www.rdocumentation.org/packages/reticulate/versions/1.16)
 1. [Calling python from R](https://cran.r-project.org/web/packages/reticulate/vignettes/calling_python.html)
