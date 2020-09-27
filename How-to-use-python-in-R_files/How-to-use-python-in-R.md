@@ -1,7 +1,10 @@
-How to use python in R
-================
-J. Eduardo Rodriguez Almaraz
 
+# How to use python in R
+  
+> By J. Eduardo Rodriguez Almaraz
+------------------------------------
+## Contents
+  
 - [Importing libraries](#Importing-libraries-using-R-syntax)
   
 - [Getting the data](#Importing-the-dataset)
@@ -11,7 +14,7 @@ J. Eduardo Rodriguez Almaraz
   * [heatmap](#Heatmap)
   * [Pair Plots](#Pair-plots)
   
-- [Manipulating Data](#Extra-quick-examples-to-manipulate-Python-\<–\>-R-data)
+- [Manipulating Data](#Extra-quick-examples-to-manipulate-R-to-Python-to-R-data)
   * [Python to R](#Python-to-R)
   * [R to Python](#R-to-Python)
 
@@ -186,7 +189,7 @@ still prefer googlecollab but this works fine as well.
 This tutorial was done following instructions from [towards data
 science](https://towardsdatascience.com/python-seaborn-plots-in-r-using-reticulate-fb59cebf61a7).
 
-## Extra quick examples to manipulate Python \<–\> R data
+## Extra quick examples to manipulate R to Python to R data
 
 Here I am laying out how we can interact with data generated while using
 python and bringing it back to R.
