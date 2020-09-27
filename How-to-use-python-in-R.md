@@ -171,6 +171,12 @@ sns$pairplot(r_to_py(iris), hue='Species')
 ``` r
 plt$show()
 ```
+Additionally you can interact with variables generated while using python in r by calling `py$[name of object]`/
+For example we could manipulate the flights dataset by running the following code
+
+```
+{r}
+df2 <- (py$df1)
 
 That’s it\! You have now two options to interact with R and python. I
 still prefer googlecollab but this works fine as well.
