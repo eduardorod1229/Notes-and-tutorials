@@ -9,17 +9,22 @@ knitr::opts_chunk$set(echo = TRUE)
 library(reticulate)
 ```
 
+To see the output of this code with tables and figures see the [HTML file](https://github.com/eduardorod1229/Notes-and-tutorials/blob/master/How-to-use-python-in-R.md)
+
 ## Importing libraries using R syntax
 
-* For this to work you need to download and install the `reticulate` library and either [miniconda](https://docs.conda.io/en/latest/miniconda.html) or [anaconda](https://www.anaconda.com) software
+* For this to work you need to download and install the `reticulate` library using `install.packages('reticulate')` and either [miniconda](https://docs.conda.io/en/latest/miniconda.html) or [anaconda](https://www.anaconda.com) software
 With the following code you can import the python libraries as "R objects" which will appear in the **environment** section of R studio so for an RMarkdow you need to include the `'''{R}` syntax
+
+Additionally, you have to install the *python* libraries in *R* before using them. you can do this by typing `py_install([name of library])` in the console. You only have to do this once. If this doesn't work be sure to specify your path in the set up of the RMarkdown document
 
 ```{r include=TRUE}
 sns<- import('seaborn')
 plt<- import('matplotlib.pyplot')
 pd <- import('pandas')
 ```
-If the libraries are correctly imported then they will shouw up in the *Global environment* pane as "Modules"
+
+If the libraries are correctly imported then they will shouw up in the *Global environment* pane as *"Modules"*
 
 ## Importing the dataset
 
@@ -85,6 +90,56 @@ plt$show()
 
 That’s it! You have now two options to interact with R and python. I still prefer googlecollab but this works fine as well.
 
-An additional note is that you have to install the *python* libraries in *R* before using it you can do this by typing `py_install('name of library')` in the console. You only have to do this once. If this doesn't work be sure to specify your path in the set up of the RMarkdown document
 
-Be sure to read the reticulate documentation. This tutorial was done following instructions from [towards data science](https://towardsdatascience.com/python-seaborn-plots-in-r-using-reticulate-fb59cebf61a7).
+This tutorial was done following instructions from [towards data science](https://towardsdatascience.com/python-seaborn-plots-in-r-using-reticulate-fb59cebf61a7).
+
+## Extra quick examples to manipulate Python <--> R data
+
+Here I am laying out how we can interact with data generated while using python and bringing it back to R.
+
+We will create in python: 
+
+* Two variables with a single value
+* A list
+* A Data frame
+
+```{python}
+x=6
+y=7
+list = [4,6,5,1,2,7]
+dataframe = r.iris
+print(x,y,list,dataframe)
+```
+
+Now lets manipulate the data created above using `{r}' note that for R we need to specify what each variable is.
+I.e. for the 'list' in python we need to use R syntax to specify that this is vector using `c()`.
+We do the same for the `data.frame`
+
+```{r}
+a <- py$x + 1
+b <- py$y +2 
+c<- py$x + py$y
+vector <-c(py$list)
+data_frame <- data.frame(py$dataframe)
+data_frame2 <- (data_frame)**2
+
+a
+b
+c
+vector
+data_frame
+
+```
+
+Now lets bring it back to Python:
+
+```{python}
+z = r.c**2
+print(z)
+df2 = pd.DataFrame(r.data_frame2)
+print(df2)
+```
+
+As you can see this allows flexibility between both languages making it easy to manipulate variables and making them available for both languages.
+Be sure to read the [reticulate documentation](https://www.rdocumentation.org/packages/reticulate/versions/1.16).
+**Good luck!**
