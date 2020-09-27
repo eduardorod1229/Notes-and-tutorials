@@ -4,6 +4,8 @@
 #### J. Eduardo Rodriguez Almaraz
 
 
+To see the full images and dataset see the [html file](https://github.com/eduardorod1229/Notes-and-tutorials/blob/master/How-to-use-python-in-R.md)
+
 ## Importing libraries using R syntax
 
 * For this to work you need to download and install the `reticulate` library and either [miniconda](https://docs.conda.io/en/latest/miniconda.html) or [anaconda](https://www.anaconda.com) software
