@@ -4,7 +4,7 @@
 #### J. Eduardo Rodriguez Almaraz
 
 
-* To see the full explanation, figures and datasets see the [html file](https://github.com/eduardorod1229/Notes-and-tutorials/blob/master/How-to-use-python-in-R_files/How-to-use-python-in-R.md)
+* To see the full explanation and datasets [click here](https://github.com/eduardorod1229/Notes-and-tutorials/blob/master/How-to-use-python-in-R_files/How-to-use-python-in-R.md)
 * You also can see the R Markdown that used to create this tutorial and try it out yourself [here](https://github.com/eduardorod1229/Notes-and-tutorials/blob/master/How-to-use-python-in-R.Rmd)
 
 ## Importing libraries using R syntax
