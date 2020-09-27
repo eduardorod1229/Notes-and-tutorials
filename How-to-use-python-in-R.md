@@ -2,7 +2,10 @@ How to use python in R
 ================
 J. Eduardo Rodriguez Almaraz
 
-``` r
+ ### R markdown set up
+ *Note: If r doesn't allow you to use reticulate you may need to specify the path were anaconda is installed*
+```
+{r}
 knitr::opts_chunk$set(echo = TRUE)
 library(reticulate)
 ```
@@ -15,7 +18,14 @@ library(reticulate)
     [anaconda](https://www.anaconda.com) software With the following
     code you can import the python libraries as “R objects” which will
     appear in the **environment** section of R studio so for an RMarkdow
-    you need to include the `'''{R}` syntax
+    you need to include the `'''{R}` syntax.
+    
+  - Additionally, you have to install the *python* libraries in
+    *R* before using them you can do this by typing `py_install('name of
+    library')` in the console. You only have to do this once. If this
+    doesn’t work be sure to specify your path in the set up of the
+    RMarkdown document
+
 
 <!-- end list -->
 
@@ -130,10 +140,12 @@ plt.show()
 ```
 
 ![](How-to-use-python-in-R_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
-\#\# Alternative method to run python within R Up to importing the
-dataset will be the same. To create the plots in python.
 
-  - Begin by telling Rmarkdown that you will be using R syntax `{r}`
+
+## Alternative method to run python within R 
+Up to importing the dataset will be the same. To create the plots in python.
+
+  - Begin by telling R markdown that you will be using R syntax `{r}`
 
 <!-- end list -->
 
@@ -147,8 +159,8 @@ sns$heatmap(r_to_py(df1), fmt='g', cmap='viridis')
 plt$show()
 ```
 
-Note that using r\_to\_py has the same effect than using r.df1. Is the
-way we have to tell python that we will be using an R object.
+Note that using `r_to_py` has the same effect than using `r.df1`. Thi is just the
+way we have to tell python that we will be using an `{r}` "object".
 
 ``` r
 sns$pairplot(r_to_py(iris), hue='Species')
@@ -163,11 +175,6 @@ plt$show()
 That’s it\! You have now two options to interact with R and python. I
 still prefer googlecollab but this works fine as well.
 
-An additional note is that you have to install the *python* libraries in
-*R* before using it you can do this by typing `py_install('name of
-library')` in the console. You only have to do this once. If this
-doesn’t work be sure to specify your path in the set up of the
-RMarkdown document
 
 Be sure to read the reticulate documentation. This tutorial was done
 following instructions from [towards data
