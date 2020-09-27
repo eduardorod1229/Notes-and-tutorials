@@ -129,7 +129,7 @@ pairplots
 sns.pairplot(r.iris, hue = 'Species')
 ```
 
-    ## <seaborn.axisgrid.PairGrid object at 0x7fa233638940>
+    ## <seaborn.axisgrid.PairGrid object at 0x7f7fd3dc8668>
 
 ``` python
 plt.show()
