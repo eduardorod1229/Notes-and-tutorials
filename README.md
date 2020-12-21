@@ -12,4 +12,4 @@ You can see other notes, resources and links that do contain little to no code i
     1. This file aims to explain which packages and libraries are needed to navigate the `reticulate` R library. It includes examples toggling between R and python using system data `iris` and `flights`. It also includes the R Markdown file to copy and try out in your local machine.
     
 2. [Intro to R with a python perspective](https://github.com/eduardorod1229/RMarkdown/blob/main/Github_R.md)
-    2. This page walks through the basics of R making some references for the python user.
+    1. This page walks through the basics of R making some references for the python user. From basic syntax, variable creation to data frame manipulation
