@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+# Tutorials
+This repository is meant to include various tutorials on how to use different packages mainly as personal notes to navigaet data science and other statistical methods. However, feel free to use it if you find it helpful.
 
-You can use the [editor on GitHub](https://github.com/eduardorod1229/Notes-and-tutorials/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The main topics discussed here are: Python, google colab, R and occassionally STATA
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+You can see other notes, resources and links that do contain little to no code in my [wiki](https://github.com/eduardorod1229/Notes-and-tutorials/wiki). 
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Contents:
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/eduardorod1229/Notes-and-tutorials/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+1. [How to use python in R](https://github.com/eduardorod1229/Notes-and-tutorials/tree/master/How-to-use-python-in-R_files)
+    1. This file aims to explain which packages and libraries are needed to navigate the `reticulate` R library. It includes examples toggling between R and python using system data `iris` and `flights`. It also includes the R Markdown file to copy and try out in your local machine.
